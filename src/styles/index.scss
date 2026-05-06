@@ -1,0 +1,71 @@
+// TDesign 主题变量覆盖
+:root {
+  --td-brand-color: #0052d9;
+  --td-brand-color-hover: #266fe8;
+  --td-brand-color-active: #0034b5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei",
+    sans-serif;
+}
+
+// 号码球样式
+.number-ball {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  margin: 2px;
+
+  &--red {
+    background: #e34d59;
+  }
+  &--blue {
+    background: #0052d9;
+  }
+  &--normal {
+    background: #8b949e;
+  }
+}
+
+.ticket-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
+
+  .separator {
+    margin: 0 4px;
+    color: #8b949e;
+    font-weight: bold;
+  }
+}
+
+// 净盈亏颜色
+.profit {
+  color: #00a870;
+  font-weight: 600;
+}
+.loss {
+  color: #e34d59;
+  font-weight: 600;
+}
+.zero {
+  color: #8b949e;
+}
