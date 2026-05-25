@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
-  history: createWebHistory("/admin/"),
+  history: createWebHistory(process.env.NODE_ENV === "production" ? "/admin/" : "/"),
   routes: [
     { path: "/", redirect: "/statistics" },
     {
